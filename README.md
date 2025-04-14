@@ -14,7 +14,7 @@ Nesta ferramenta, os solos podem ser agrupados em 13 classes texturais. Basta in
 
 ## 👨‍🏫 Autor
 
-Desenvolvido por **João Henrique Quoos**, doutor e professor de Geografia no Instituto Federal de Santa Catarina (IFSC), Campus Garopaba.
+Desenvolvido por **Prof. Dr. João Henrique Quoos**, Professor de Geografia no Instituto Federal de Santa Catarina (IFSC), Campus Garopaba.
 
 ---
 
@@ -24,7 +24,7 @@ Este projeto é de uso livre para fins educacionais e de extensão, desde que **
 
 Se for utilizar ou modificar este código em publicações, sites ou outras ferramentas, por favor cite:
 
-> Quoos, J. H. (IFSC Garopaba). Ferramenta interativa para determinação da textura do solo via triângulo textural. Disponível em: [https://github.com/](https://github.com/) (adicione o link do seu repositório aqui).
+> Quoos, J. H. (IFSC Garopaba). Ferramenta interativa para determinação da textura do solo via triângulo textural. Disponível em: [https://github.com/Quoos](https://github.com/Quoos) .
 
 ---
 
