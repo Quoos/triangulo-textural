@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- Meta tags para compartilhamento -->
+<meta content="Triângulo Textural do Solo" property="og:title"/>
+<meta content="Ferramenta interativa para identificar a classe textural de um solo a partir de argila, silte e areia." property="og:description"/>
+<meta content="https://triangulotextural.quoos.com.br/img/thumb.png" property="og:image"/>
+<meta content="https://triangulotextural.quoos.com.br/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+  body {
+    font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  @media (max-width: 600px) {
+    table, tr, td {
+      display: block;
+      width: 100%;
+    }
+    td {
+      margin-bottom: 15px;
+    }
+  }
+</style>
+<title>Triângulo Textural</title>
+<style type="text/css">
+    .oculta { display: none; }
+    .responsive { width: 100%; max-width: 540px; height: auto; }
+    .Botao {
+      background-color:#7f7f7f;
+      border:1px solid #777777;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size:18px;
+      padding:6px 6px;
+      text-decoration:none;
+    }
+    .Botao:hover { background-color:#bfbfbf; }
+    .Botao:active { position:relative; top:1px; }
+    input[type=text], select, textarea, input[type=number] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      font-family: Montserrat, sans-serif;
+      font-size:18px;
+    }
+    .textopeq { font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 12pt; }
+    .textopeq2 { font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 8pt; }
+    h2 { font-size: 14px; font-family: Calibri, "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight: bold; }
+  </style>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/></head>
+<body>
+<h2>Triângulo Textural</h2>
+<form>
+<table border="0" cellpadding="5" cellspacing="5" width="100%">
+<tr>
+<td><span class="textopeq">Argila:</span><br/><input id="valorargila" required="" type="number" value="0"/></td>
+<td><span class="textopeq">Silte:</span><br/><input id="valorsilte" required="" type="number" value="0"/></td>
+<td><span class="textopeq">Areia:</span><br/><input id="valorareia" required="" type="number" value="0"/></td>
+<td><input class="Botao" onclick="Confere()" type="button" value="Enviar"/><center><p class="textopeq2" id="valortotal">-</p></center></td>
+</tr>
+</table>
+</form>
+<div id="divTRIANGULO">
+<img class="responsive" src="img/triangulos/triangulo_textural_quoos.com.br.png"/>
+</div>
+<div id="divTUDO">
+<div class="oculta" id="divARGILA"><img class="responsive" src="img/triangulos/divargila.png"/></div>
+<div class="oculta" id="divMUITOARGILOSA"><img class="responsive" src="img/triangulos/divmuitoargilosa.png"/></div>
+<div class="oculta" id="divARGILOSILTOSA"><img class="responsive" src="img/triangulos/divargilosiltosa.png"/></div>
+<div class="oculta" id="divARGILOARENOSA"><img class="responsive" src="img/triangulos/divargiloarenosa.png"/></div>
+<div class="oculta" id="divFRANCOARGILOSA"><img class="responsive" src="img/triangulos/divfrancoargilosa.png"/></div>
+<div class="oculta" id="divFRANCOARGILOARENOSA"><img class="responsive" src="img/triangulos/divfrancoargiloarenosa.png"/></div>
+<div class="oculta" id="divFRANCOARGILOSILTOSA"><img class="responsive" src="img/triangulos/divfrancoargilosiltosa.png"/></div>
+<div class="oculta" id="divFRANCOSILTOSA"><img class="responsive" src="img/triangulos/divfrancosiltosa.png"/></div>
+<div class="oculta" id="divFRANCOSILTOSA2"><img class="responsive" src="img/triangulos/divfrancosiltosa2.png"/></div>
+<div class="oculta" id="divSILTE"><img class="responsive" src="img/triangulos/divsilte.png"/></div>
+<div class="oculta" id="divFRANCA"><img class="responsive" src="img/triangulos/divfranca.png"/></div>
+<div class="oculta" id="divFRANCOARENOSO"><img class="responsive" src="img/triangulos/divfrancoarenoso.png"/></div>
+<div class="oculta" id="divFRANCOARENOSO2"><img class="responsive" src="img/triangulos/divfrancoarenoso2.png"/></div>
+<div class="oculta" id="divAREIAFRANCA"><img class="responsive" src="img/triangulos/divareiafranca.png"/></div>
+<div class="oculta" id="divAREIAFRANCA2"><img class="responsive" src="img/triangulos/divareiafranca2.png"/></div>
+<div class="oculta" id="divAREIA"><img class="responsive" src="img/triangulos/divareia.png"/></div>
+</div>
+<script src="triangulotextural.js"></script>
+
+<div style="margin-top: 20px; text-align: center;">
+<a href="https://wa.me/?text=Descubra%20a%20classe%20textural%20do%20solo%20com%20esta%20ferramenta:%20https://triangulotextural.quoos.com.br" style="background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-size: 16px;" target="_blank">
+    🔗 Compartilhar no WhatsApp
+  </a>
+</div>
+</body>
+</html>
